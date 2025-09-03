@@ -8,12 +8,23 @@ A arquitetura do projeto foi desenvolvida seguindo os princípios SOLID para gar
 
 ## Funcionalidades Principais
 
--   **Coleta de Notícias**: Faz requisições ao feed RSS do Google Notícias com base em termos de pesquisa personalizados.
--   **Análise de Sentimento**: Utiliza um modelo de Processamento de Linguagem Natural (PLN) pré-treinado do Hugging Face (BERT para português) para classificar o sentimento das notícias.
--   **Visualização de Dados**: Um dashboard interativo construído com Streamlit exibe os dados em:
-    -   Um gráfico de pizza mostrando a distribuição de sentimentos.
-    -   Uma nuvem de palavras com os termos mais frequentes.
-    -   Uma tabela interativa com os dados brutos das notícias.
+```text
+├── doc/
+│   └── DECISIONS.md                   # Documento com as principais decisões de design e arquitetura.
+├── requirements.txt                   # Dependências do projeto.
+├── src/
+│   ├── abstrato/
+│   │   └── Interfaces.py              # Classes abstratas (interfaces) que definem a arquitetura SOLID.
+│   ├── analise/
+│   │   ├── Analisador_regras.py       # Implementação da análise de sentimento baseada em regras.
+│   │   └── Analisador_transformer.py  # Implementação da análise de sentimento com BERT.
+│   ├── coleta/
+│   │   └── Coletor_rss.py             # Implementação do coletor de notícias via RSS.
+│   ├── processamento/
+│   │   ├── Limpador_texto.py          # Classe para pré-processamento e limpeza de texto.
+│   │   └── Orquestrador_noticias.py   # Classe de alto nível que orquestra o fluxo de dados.
+│   └── app.py                         # Script principal para iniciar o dashboard Streamlit.
+└── README.md                          # Documentação principal do projeto.
 
 ## Estrutura do Projeto
 
@@ -40,6 +51,7 @@ A arquitetura do projeto foi desenvolvida seguindo os princípios SOLID para gar
 │ └── app.py # Script principal para iniciar o dashboard Streamlit.
 
 └── README.md # Documentação principal do projeto.
+````
 
 
 ## Como Usar
