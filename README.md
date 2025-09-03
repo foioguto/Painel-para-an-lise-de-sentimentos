@@ -17,13 +17,23 @@ A arquitetura do projeto foi desenvolvida seguindo os princípios SOLID para gar
 
 ## Estrutura do Projeto
 
-├── Analisador_regras.py           # Implementação da análise de sentimento baseada em regras.
-├── Coletor_rss.py                # Implementação do coletor de notícias via RSS.
-├── Interfaces.py                 # Classes abstratas (interfaces) que definem a arquitetura SOLID.
-├── Limpador_texto.py             # Classe para pré-processamento e limpeza de texto.
-├── Orquestrador_noticias.py      # Classe de alto nível que orquestra o fluxo de dados.
-├── app.py                        # O script principal para iniciar o dashboard Streamlit.
-└── README.md                     # Este arquivo.
+├── doc/
+│   └── DECISIONS.md                # Documento com as principais decisões de design e arquitetura.
+├── requirements.txt                # Dependências do projeto.
+├── src/
+│   ├── abstrato/
+│   │   └── Interfaces.py           # Classes abstratas (interfaces) que definem a arquitetura SOLID.
+│   ├── analise/
+│   │   ├── Analisador_regras.py    # Implementação da análise de sentimento baseada em regras.
+│   │   └── Analisador_transformer.py # Implementação da análise de sentimento com BERT.
+│   ├── coleta/
+│   │   └── Coletor_rss.py          # Implementação do coletor de notícias via RSS.
+│   ├── processamento/
+│   │   ├── Limpador_texto.py       # Classe para pré-processamento e limpeza de texto.
+│   │   └── Orquestrador_noticias.py # Classe de alto nível que orquestra o fluxo de dados.
+│   └── app.py                      # Script principal para iniciar o dashboard Streamlit.
+└── README.md                       # Documentação principal do projeto.
+
 
 ## Como Usar
 
@@ -43,6 +53,6 @@ Instale todas as bibliotecas necessárias usando o arquivo `requirements.txt`:
 
 Após a instalação, inicie o dashboard com o Streamlit. Certifique-se de estar no diretório raiz do projeto.
 
-- streamlit run app.py
+- streamlit run src/app.py
 
 Um navegador abrirá automaticamente com o dashboard em execução. Você pode então digitar os termos de busca e clicar em "Analisar Notícias" para ver os resultados.

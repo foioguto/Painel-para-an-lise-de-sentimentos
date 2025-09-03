@@ -1,4 +1,4 @@
-import src.Interfaces as Interfaces
+import abstrato.Interfaces as Interfaces
 
 class Orquestrador_noticias:
     """

@@ -5,11 +5,11 @@ from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 import re
 
-from src.processamento.Orquestrador_noticias import Orquestrador_noticias
-from src.coleta.Coletor_rss import Coletor_rss
-from src.processamento.Limpador_texto import Limpador_texto
-from src.analise.Analisador_regras import Analisador_regras
-from src.Interfaces import Analisador_sentimento, Coletor_noticias, Processador_texto
+from processamento.Orquestrador_noticias import Orquestrador_noticias
+from coleta.Coletor_rss import Coletor_rss
+from processamento.Limpador_texto import Limpador_texto
+from analise.Analisador_regras import Analisador_regras
+from abstrato.Interfaces import Analisador_sentimento, Coletor_noticias, Processador_texto
 
 # --- Funções de Preparação de Dados ---
 

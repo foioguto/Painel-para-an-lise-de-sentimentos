@@ -1,4 +1,4 @@
-from src.Interfaces import Coletor_noticias
+from abstrato.Interfaces import Coletor_noticias
 import requests
 import xml.etree.ElementTree as ET
 
