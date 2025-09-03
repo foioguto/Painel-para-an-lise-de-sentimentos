@@ -1,0 +1,20 @@
+# requirements.txt
+
+# Web Scraping e Processamento de Dados
+requests
+lxml
+beautifulsoup4
+
+# Análise de Sentimento com Hugging Face
+# transformers e torch são necessários para o modelo BERT
+transformers
+torch
+
+# Criação do Dashboard
+streamlit
+pandas
+plotly
+wordcloud
+matplotlib
+
+# pip install -r requirements.txt
