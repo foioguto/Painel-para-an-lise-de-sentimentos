@@ -1,4 +1,4 @@
-import Interfaces
+import src.Interfaces as Interfaces
 
 class Orquestrador_noticias:
     """

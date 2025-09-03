@@ -1,5 +1,5 @@
 # Limpador_texto.py
-from Interfaces import Processador_texto
+from src.Interfaces import Processador_texto
 from bs4 import BeautifulSoup
 import re
 

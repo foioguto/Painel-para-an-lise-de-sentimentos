@@ -1,4 +1,4 @@
-from Interfaces import Coletor_noticias
+from src.Interfaces import Coletor_noticias
 import requests
 import xml.etree.ElementTree as ET
 

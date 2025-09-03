@@ -1,4 +1,4 @@
-import Interfaces
+import src.Interfaces as Interfaces
 
 class Analisador_regras(Interfaces.Analisador_sentimento):
     """

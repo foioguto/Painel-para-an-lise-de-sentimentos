@@ -5,11 +5,11 @@ from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 import re
 
-from Orquestrador_noticias import Orquestrador_noticias
-from Coletor_rss import Coletor_rss
-from Limpador_texto import Limpador_texto
-from Analisador_regras import Analisador_regras
-from Interfaces import Analisador_sentimento, Coletor_noticias, Processador_texto
+from src.processamento.Orquestrador_noticias import Orquestrador_noticias
+from src.coleta.Coletor_rss import Coletor_rss
+from src.processamento.Limpador_texto import Limpador_texto
+from src.analise.Analisador_regras import Analisador_regras
+from src.Interfaces import Analisador_sentimento, Coletor_noticias, Processador_texto
 
 # --- Funções de Preparação de Dados ---
 
@@ -116,3 +116,16 @@ if st.button("Analisar Notícias"):
             
     else:
         st.error("Por favor, digite um termo de busca.")
+
+st.markdown("""
+**Aviso sobre a Análise de Sentimento:**
+A análise de sentimento utiliza um modelo de PLN (Processamento de Linguagem Natural) pré-treinado. Embora seja robusto, o modelo pode ter limitações e não deve ser considerado infalível. O resultado serve como uma indicação da polaridade do texto.
+""")
+
+# --- Identificando código gerado por IA ---
+
+st.markdown("---")
+st.markdown("""
+#### Sobre este Projeto
+Partes deste código foram desenvolvidas com o auxílio de um modelo de inteligência artificial. O modelo foi utilizado como um assistente para aprimorar a arquitetura (p. ex., aplicação de princípios SOLID), otimizar design e gerar documentação.
+""")

@@ -1,4 +1,4 @@
-from Interfaces import Analisador_sentimento
+from src.Interfaces import Analisador_sentimento
 from transformers import pipeline
 
 class Analisador_transformer(Analisador_sentimento):
