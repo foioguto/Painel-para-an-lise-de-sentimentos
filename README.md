@@ -18,29 +18,28 @@ A arquitetura do projeto foi desenvolvida seguindo os princípios SOLID para gar
 ## Estrutura do Projeto
 
 ├── doc/
-│   └── DECISIONS.md                   # Documento com as principais decisões de design e arquitetura.
+│ └── DECISIONS.md # Documento com as principais decisões de design e arquitetura.
 
-├── requirements.txt                   # Dependências do projeto.
+├── requirements.txt # Dependências do projeto.
 
 ├── src/
-│   ├── abstrato/
-│   │   └── Interfaces.py              # Classes abstratas (interfaces) que definem a arquitetura SOLID.
+│ ├── abstrato/
+│ │ └── Interfaces.py # Classes abstratas (interfaces) que definem a arquitetura SOLID.
 │
-│   ├── analise/
-│   │   ├── Analisador_regras.py       # Implementação da análise de sentimento baseada em regras.
-│   │   └── Analisador_transformer.py  # Implementação da análise de sentimento com BERT.
+│ ├── analise/
+│ │ ├── Analisador_regras.py # Implementação da análise de sentimento baseada em regras.
+│ │ └── Analisador_transformer.py # Implementação da análise de sentimento com BERT.
 │
-│   ├── coleta/
-│   │   └── Coletor_rss.py             # Implementação do coletor de notícias via RSS.
+│ ├── coleta/
+│ │ └── Coletor_rss.py # Implementação do coletor de notícias via RSS.
 │
-│   ├── processamento/
-│   │   ├── Limpador_texto.py          # Classe para pré-processamento e limpeza de texto.
-│   │   └── Orquestrador_noticias.py   # Classe de alto nível que orquestra o fluxo de dados.
+│ ├── processamento/
+│ │ ├── Limpador_texto.py # Classe para pré-processamento e limpeza de texto.
+│ │ └── Orquestrador_noticias.py # Classe de alto nível que orquestra o fluxo de dados.
 │
-│   └── app.py                         # Script principal para iniciar o dashboard Streamlit.
+│ └── app.py # Script principal para iniciar o dashboard Streamlit.
 
-└── README.md                          # Documentação principal do projeto.
-                
+└── README.md # Documentação principal do projeto.
 
 
 ## Como Usar
