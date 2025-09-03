@@ -18,21 +18,29 @@ A arquitetura do projeto foi desenvolvida seguindo os princípios SOLID para gar
 ## Estrutura do Projeto
 
 ├── doc/
-│   └── DECISIONS.md               
-├── requirements.txt              
+│   └── DECISIONS.md                   # Documento com as principais decisões de design e arquitetura.
+
+├── requirements.txt                   # Dependências do projeto.
+
 ├── src/
 │   ├── abstrato/
-│   │   └── Interfaces.py          
+│   │   └── Interfaces.py              # Classes abstratas (interfaces) que definem a arquitetura SOLID.
+│
 │   ├── analise/
-│   │   ├── Analisador_regras.py    
-│   │   └── Analisador_transformer.py 
+│   │   ├── Analisador_regras.py       # Implementação da análise de sentimento baseada em regras.
+│   │   └── Analisador_transformer.py  # Implementação da análise de sentimento com BERT.
+│
 │   ├── coleta/
-│   │   └── Coletor_rss.py          
+│   │   └── Coletor_rss.py             # Implementação do coletor de notícias via RSS.
+│
 │   ├── processamento/
-│   │   ├── Limpador_texto.py      
-│   │   └── Orquestrador_noticias.py 
-│   └── app.py                      
-└── README.md                     
+│   │   ├── Limpador_texto.py          # Classe para pré-processamento e limpeza de texto.
+│   │   └── Orquestrador_noticias.py   # Classe de alto nível que orquestra o fluxo de dados.
+│
+│   └── app.py                         # Script principal para iniciar o dashboard Streamlit.
+
+└── README.md                          # Documentação principal do projeto.
+                
 
 
 ## Como Usar
